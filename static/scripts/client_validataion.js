@@ -1,5 +1,9 @@
 
 window.onload = function(){
+    //CODEREVIEW: code duplication
+    function changeResponseText(textToPresent){
+        document.getElementById("msgServer").innerHTML = textToPresent;
+    }
     document.getElementById("sumbit_button").addEventListener("click",
         function () {
             var id = document.getElementById('id_num').value;
@@ -10,12 +14,16 @@ window.onload = function(){
                 postRequest.onreadystatechange =
                     function(){
                         if (this.readyState == 4 && this.status == 200) {
+                            // CODREVIEW: response
                             document.getElementById("msgServer").innerHTML=this.responseText;
                     }
                  };
-                postRequest.open('POST' ,'http://127.0.0.1:5000/submit', true);
+                // CODREVIEW: move to json
+                postRequest.open('POST' ,'/submit', true);
                 postRequest.setRequestHeader("Content-type", "application/json")
-                postRequest.send(id);
+                var body = {"id": id };
+
+                postRequest.send(JSON.stringify(body));
 
             }else{document.getElementById("msgServer").innerHTML='please insert 9 digits';}
           });

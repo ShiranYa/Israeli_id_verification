@@ -1,10 +1,7 @@
 import re
+
 def is_even(index):
-    if index % 2 == 0 or index == 0:
-        is_even=True
-    else:
-        is_even = False
-    return is_even
+    return index % 2 == 0
 
 def sum_not_even(temp_digits):
     temp_digits = int(temp_digits)*2
@@ -25,7 +22,11 @@ def lohan_algorytm(id):
         else:
             sum_digits += sum_not_even(digit)
         index_id += 1
-
+    # CODREVIEW: change to range loop
+    # for index_id in range(len(id)):
+    #     digit = int(id[index_id])
+    #
+    #
     unity_digit = sum_digits % 10
     if unity_digit == 0:
         lohan_safe_digit=0
@@ -34,19 +35,11 @@ def lohan_algorytm(id):
 
 def validation(id_number):
     pattern = '^[0-9]{9}$'
-    id_result= re.match(pattern, id_number)
-    if id_result:
-        last_index = len(id_number)-1
-        last_digit = id_number[last_index]
-        id_without_last_digit = id_number[0:last_index]
-        safe_digit = lohan_algorytm(id_without_last_digit)
-
-        if safe_digit == int(last_digit):
-            validation_status = True
-            print(f'validation: {validation_status}')
-            return validation_status
-        else:
-            validation_status = False
-            print(f'validation: {validation_status}')
-            return validation_status
-    else: return "pattern ID doesn't exsits"
+    id_result = re.match(pattern, id_number)
+    if not id_result:
+        return "pattern ID doesn't exsits"
+    last_index = len(id_number)-1
+    last_digit = id_number[last_index]
+    id_without_last_digit = id_number[:last_index]
+    safe_digit = lohan_algorytm(id_without_last_digit)
+    return safe_digit == int(last_digit)
