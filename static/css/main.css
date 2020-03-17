@@ -1,0 +1,46 @@
+body {
+    margin:0;
+    font-family: ariel;
+    background-color: #121222;
+    color: #C4C4C4;
+}
+
+.font_size{
+     font-size: 25px;
+     font-family: Sans-serif;
+     color: #C4C4C4;
+}
+
+img {
+    width: 100%;
+    max-height: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.7;
+}
+
+#id_num {
+    color:#C4C4C4;
+    background-color: #121222;
+    border-color: #C4C4C4;
+}
+
+
+#sumbit_button{
+    background: #C4C4C4;
+    color: #121222;
+}
+
+.input_id{
+    margin-top: 10%;
+    display: block;
+    text-align: center;
+}
+
+#msgServer{
+    color:#C4C4C4;
+
+
+
+}
+
+
