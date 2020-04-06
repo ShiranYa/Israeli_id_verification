@@ -7,14 +7,12 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/submit',methods= ['GET','POST'])
+@app.route('/submit',methods= ['POST'])
 def submit():
-    id = str(request.json)
-    status = validation(id)
-    if status==True:
-        return 'Your ID is valid'
-    elif  status==False: return 'Your ID is NOT valid'
-    else: return status #is this the way to close completly the valdation on the server side?
+    body_request_id = request.json['id']
+    result_validation = validation(body_request_id)
+    return result_validation
+
 
 if __name__ == '__main__':
     app.run(debug=True)

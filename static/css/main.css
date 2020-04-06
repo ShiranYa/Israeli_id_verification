@@ -28,19 +28,20 @@ img {
 #sumbit_button{
     background: #C4C4C4;
     color: #121222;
+    margin-top: 2%;
 }
-
+.inputMsg{
+     margin-top: 2%;
+}
 .input_id{
-    margin-top: 10%;
-    display: block;
+    margin-top: 5%;
     text-align: center;
 }
 
 #msgServer{
     color:#C4C4C4;
-
-
+    position: block;
+    margin-top: 1%;
 
 }
-
 

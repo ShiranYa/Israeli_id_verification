@@ -28,7 +28,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -95,15 +95,43 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/validation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="validation_id" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="id_verification_web" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/validation_id.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.app" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.validation" />
+      <item itemvalue="Python.validation_id" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.app" />
+        <item itemvalue="Python.validation_id" />
         <item itemvalue="Python.validation" />
         <item itemvalue="Python.test" />
       </list>
@@ -126,10 +154,11 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1092" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583744980456">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state x="2748" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584452070327">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1092" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583744980456" />
+    <state x="2748" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584452070327" />
     <state x="2647" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584197083670">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -138,59 +167,68 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2322" y="439" key="Github.CreateGistDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584439624764" />
-    <state width="1122" height="172" key="GridCell.Tab.0.bottom" timestamp="1584440864593">
+    <state width="1899" height="249" key="GridCell.Tab.0.bottom" timestamp="1586211602270">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="348" key="GridCell.Tab.0.bottom/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583944086139" />
-    <state width="1122" height="172" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584440864593" />
-    <state width="1122" height="172" key="GridCell.Tab.0.center" timestamp="1584440864593">
+    <state width="1899" height="249" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586211602270" />
+    <state width="1234" height="249" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.2.1440.860@1920.2.1440.860" timestamp="1585660792156" />
+    <state width="1899" height="249" key="GridCell.Tab.0.center" timestamp="1586211602270">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="348" key="GridCell.Tab.0.center/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583944086139" />
-    <state width="1122" height="172" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584440864593" />
-    <state width="1122" height="172" key="GridCell.Tab.0.left" timestamp="1584440864592">
+    <state width="1899" height="249" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586211602270" />
+    <state width="1234" height="249" key="GridCell.Tab.0.center/0.0.1280.680/1920.2.1440.860@1920.2.1440.860" timestamp="1585660792156" />
+    <state width="1899" height="249" key="GridCell.Tab.0.left" timestamp="1586211602270">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="348" key="GridCell.Tab.0.left/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583944086139" />
-    <state width="1122" height="172" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584440864592" />
-    <state width="1122" height="172" key="GridCell.Tab.0.right" timestamp="1584440864593">
+    <state width="1899" height="249" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586211602270" />
+    <state width="1234" height="249" key="GridCell.Tab.0.left/0.0.1280.680/1920.2.1440.860@1920.2.1440.860" timestamp="1585660792156" />
+    <state width="1899" height="249" key="GridCell.Tab.0.right" timestamp="1586211602270">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="348" key="GridCell.Tab.0.right/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583944086139" />
-    <state width="1122" height="172" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584440864593" />
-    <state width="1052" height="348" key="GridCell.Tab.1.bottom" timestamp="1584119378455">
+    <state width="1899" height="249" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586211602270" />
+    <state width="1234" height="249" key="GridCell.Tab.0.right/0.0.1280.680/1920.2.1440.860@1920.2.1440.860" timestamp="1585660792156" />
+    <state width="1899" height="356" key="GridCell.Tab.1.bottom" timestamp="1586037820359">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583944086139" />
-    <state width="1052" height="348" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584119378455" />
-    <state width="1052" height="348" key="GridCell.Tab.1.center" timestamp="1584119378455">
+    <state width="1899" height="356" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586037820359" />
+    <state width="1899" height="356" key="GridCell.Tab.1.center" timestamp="1586037820359">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583944086139" />
-    <state width="1052" height="348" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584119378455" />
-    <state width="1052" height="348" key="GridCell.Tab.1.left" timestamp="1584119378455">
+    <state width="1899" height="356" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586037820359" />
+    <state width="1899" height="356" key="GridCell.Tab.1.left" timestamp="1586037820359">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583944086139" />
-    <state width="1052" height="348" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584119378455" />
-    <state width="1052" height="348" key="GridCell.Tab.1.right" timestamp="1584119378455">
+    <state width="1899" height="356" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586037820359" />
+    <state width="1899" height="356" key="GridCell.Tab.1.right" timestamp="1586037820359">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583944086139" />
-    <state width="1052" height="348" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584119378455" />
-    <state x="2317" y="51" key="SettingsEditor" timestamp="1584440848943">
+    <state width="1899" height="356" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586037820359" />
+    <state x="2595" y="79" key="SettingsEditor" timestamp="1584452197583">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1180" y="69" key="SettingsEditor/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583940845309" />
-    <state x="2317" y="51" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584440848943" />
-    <state x="3055" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1584439510412">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="2595" y="79" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584452197583" />
+    <state x="2751" y="287" key="com.intellij.ide.util.TipDialog" timestamp="1585606359471">
+      <screen x="1920" y="2" width="1440" height="860" />
     </state>
     <state x="-785" y="345" key="com.intellij.ide.util.TipDialog/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1583938089122" />
-    <state x="3055" y="345" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584439510412" />
-    <state x="2575" y="118" width="739" height="804" key="find.popup" timestamp="1584440767917">
+    <state x="3055" y="345" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584451627451" />
+    <state x="2751" y="287" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.2.1440.860@1920.2.1440.860" timestamp="1585606359471" />
+    <state x="2368" y="352" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585650461699">
+      <screen x="1920" y="2" width="1440" height="860" />
+    </state>
+    <state x="2368" y="352" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680/1920.2.1440.860@1920.2.1440.860" timestamp="1585650461699" />
+    <state x="2575" y="118" width="739" height="804" key="find.popup" timestamp="1586210940004">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2575" y="118" width="739" height="804" key="find.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584440767917" />
+    <state x="2575" y="118" width="739" height="804" key="find.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586210940004" />
   </component>
 </project>
