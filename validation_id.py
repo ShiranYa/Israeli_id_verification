@@ -13,7 +13,7 @@ def sum_not_even(temp_digits):
 def lohan_algorytm(id):
     sum_digits= 0
     for index_id, digit in enumerate(id):
-        if index_id %2 ==0: #index is even or not
+        if index_id %2 ==0:
             sum_digits += int(digit)
         else:
             sum_digits += sum_not_even(digit)
@@ -36,7 +36,6 @@ def validation(id_number):
         'valid': 'Your ID is valid',
         'not_valid': 'Your ID is NOT valid'
     }
-
     status={
         'False': False,
         'True': True
@@ -53,12 +52,3 @@ def validation(id_number):
         return json.dumps( {'status': status['True'],'msg': valid_msg['valid']})
     else:
         return json.dumps({'status':status['False'], 'msg':valid_msg['not_valid']})
-
-
-# id= '000000083'
-# validation('307858753')
-# def name(id_number):
-#     id_without_last_digit = id_number[:-1]
-#     print( id_without_last_digit)
-
-# name('307858753')
