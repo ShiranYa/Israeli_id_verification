@@ -23,6 +23,7 @@ window.onload = function(){
                 postRequest.send(JSON.stringify(body_request));
             }else{
             var typeError= {'typeError':'please insert 9 digits'};
+            response.style.color= '121222';
             response.innerHTML= typeError['typeError'];
             }
           });
