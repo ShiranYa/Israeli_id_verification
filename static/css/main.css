@@ -35,6 +35,7 @@ img {
 .input_id{
     margin-top: 5%;
     text-align: center;
+   /*  filter: blur(3px);*/
 }
 
 #msgServer{
@@ -43,3 +44,23 @@ img {
     margin-top: 1%;
 }
 
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+  z-index: 100;
+  margin-top: -9%;
+  margin-left: 47%;
+}
+
+#loaderVisible{
+  visibility:hidden;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
