@@ -1,4 +1,5 @@
 import re , json
+from consts import valid_msg_dict , valid_status_dict
 
 def sum_not_even(temp_digits):
     temp_digits = int(temp_digits)*2
@@ -23,32 +24,21 @@ def lohan_algorytm(id):
         return 0
     return 10 - unity_digit
 
-
-def json_msg_response(status,msg):
-    return json.dumps({'status': status, 'msg': msg})
-
+def json_msg_response(res_status,res_msg):
+    return json.dumps({'status': valid_status_dict[res_status], 'valid_msg': valid_msg_dict[res_msg]})
 
 def validation(id_number):
     pattern = '^[0-9]{9}$'
-    id_result= re.match(pattern, id_number)
-    valid_msg = {
-        'not_exsit': 'Pattern ID doesn\'t exsit',
-        'valid': 'Your ID is valid',
-        'not_valid': 'Your ID is NOT valid'
-    }
-    status={
-        'False': False,
-        'True': True
-    }
+    id_result = re.match(pattern, id_number)
 
     if not id_result:
-        return json.dumps({'status': status['False'],'msg': valid_msg['not_exsit']})
+        return json_msg_response('False', 'not_exist')
 
     last_digit = id_number[-1]
     id_without_last_digit = id_number[:-1]
     safe_digit = lohan_algorytm(id_without_last_digit)
 
     if safe_digit == int(last_digit):
-        return json.dumps( {'status': status['True'],'msg': valid_msg['valid']})
+        return json_msg_response('True', 'valid')
     else:
-        return json.dumps({'status':status['False'], 'msg':valid_msg['not_valid']})
+        return json_msg_response('False', 'not_valid')

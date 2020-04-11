@@ -7,7 +7,7 @@ from validation_id import validation
 
 app = Flask(__name__)
 
-id_cach = {}
+id_cache = {}
 
 @app.route('/')
 def index():
@@ -16,14 +16,16 @@ def index():
 @app.route('/submit',methods= ['POST'])
 def submit():
     body_request_id = request.json['id']
-    if body_request_id in id_cach:
-        return id_cach[body_request_id]
-
+    if body_request_id in id_cache:
+        return id_cache[body_request_id]
     result_validation = validation(body_request_id)
     sleep(2)
-    id_cach[body_request_id] = result_validation
-    with open('id_cach.txt', 'r+') as id_file:
-        json.dump(id_cach, id_file, indent=1)
+    id_cache[body_request_id] = result_validation
+    try:
+        with open('id_cache.txt', 'r+') as id_file:
+            json.dump(id_cache, id_file, indent=1)
+    except Exception as e:
+        print(str(e))
 
     return result_validation
 

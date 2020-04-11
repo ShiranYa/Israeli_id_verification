@@ -1,0 +1,8 @@
+{
+ "301245874": "{\"status\": true, \"valid_msg\": \"Your ID is valid\"}",
+ "307858753": "{\"status\": true, \"valid_msg\": \"Your ID is valid\"}",
+ "307858752": "{\"status\": false, \"valid_msg\": \"Your ID is NOT valid\"}",
+ "307858758": "{\"status\": false, \"valid_msg\": \"Your ID is NOT valid\"}",
+ "301254789": "{\"status\": false, \"valid_msg\": \"Your ID is NOT valid\"}",
+ "307855874": "{\"status\": true, \"valid_msg\": \"Your ID is valid\"}"
+}
