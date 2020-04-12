@@ -19,18 +19,18 @@ window.onload = function(){
                 postRequest.onreadystatechange =
                     function(){
                         if (this.readyState == 4 && this.status == 200) {
-                        loading.style.visibility='hidden';
-                        var responseJSON= JSON.parse(this.responseText);
-                        var colorResponse=  (responseJSON['status']) ? 'green' : 'red';
-                        response.style.color= colorResponse;
-                        response.innerHTML = responseJSON['valid_msg'];
+                            loading.style.visibility='hidden';
+                            var responseJSON= JSON.parse(this.responseText);
+                            var colorResponse=  (responseJSON['status']) ? 'green' : 'red';
+                            response.style.color= colorResponse;
+                            response.innerHTML = responseJSON['valid_msg'];
                     }
                  };
                 postRequest.open('POST' ,'/submit', true);
                 postRequest.setRequestHeader('Content-type', 'application/json');
                 var body_request = {'id': id};
                 loading.style.visibility='visible';
-                postRequest.send(JSON.stringify(body_request));
+                setInterval(function(){postRequest.send(JSON.stringify(body_request));}, 2000);
 
             }else{
                 loading.style.visibility='hidden';
